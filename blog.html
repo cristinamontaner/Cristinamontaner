@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Blog de Contabilidad para Agencias y Estudios de Arquitectura | Cristina Montaner</title>
+    <meta name="description" content="Consejos prácticos, guías y recursos sobre contabilidad, fiscalidad y gestión financiera para agencias y estudios profesionales.">
+    <meta name="keywords" content="blog contabilidad, contable freelance, gestión financiera agencias, fiscalidad autónomos, contabilidad estudios arquitectura, recursos contables">
+    <meta name="author" content="Cristina Montaner Rodríguez">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cristinamontaner.com/blog.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cristinamontaner.com/blog.html">
+    <meta property="og:title" content="Blog de Contabilidad para Agencias y Estudios de Arquitectura | Cristina Montaner">
+    <meta property="og:description" content="Consejos prácticos, guías y recursos sobre contabilidad y gestión financiera para agencias creativas y estudios de arquitectura.">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:image" content="https://cristinamontaner.com/contable-freelance-online-cristina-montaner.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #10B981; --primary-light: #6EE7B7; --primary-dark: #059669;
+            --neutral-800: #374151; --neutral-600: #4B5563; --neutral-400: #9CA3AF;
+            --gradient-bg: linear-gradient(135deg, #F9FAFB 0%, #F3F4F6 50%, #E5E7EB 100%);
+            --card-bg: rgba(255,255,255,0.9);
+            --shadow: 0 8px 24px rgba(0,0,0,0.07);
+            --radius: 20px; --radius-sm: 12px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background: var(--gradient-bg); color: var(--neutral-800); overflow-x: hidden; }
+
+        /* ── HEADER ── */
+        header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.96); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(16,185,129,0.1); transition: box-shadow 0.3s; }
+        header::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--primary-light)); }
+        header.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
+        nav { max-width: 1200px; margin: 0 auto; padding: 0 2rem; height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+        .logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; flex-shrink: 0; }
+        .logo-icon { width: 34px; height: 34px; border-radius: 8px; overflow: hidden; background: transparent;; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+        .logo-icon img { width: 100%; height: 100%; object-fit: contain; }
+        .logo-text { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 600; color: var(--neutral-800); line-height: 1.2; }
+        .logo-tagline { display: block; font-family: 'Inter', sans-serif; font-size: 0.61rem; font-weight: 400; color: var(--neutral-400); }
+        .nav-links { display: flex; align-items: center; gap: 0.1rem; list-style: none; }
+        .nav-links a { font-size: 0.83rem; font-weight: 500; color: var(--neutral-600); text-decoration: none; padding: 0.4rem 0.85rem; border-radius: 8px; transition: all 0.2s; white-space: nowrap; }
+        .nav-links a:hover { color: var(--primary); background: rgba(16,185,129,0.06); }
+        .nav-links .nav-cta { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white !important; padding: 0.45rem 1.25rem; border-radius: 20px; font-weight: 600; margin-left: 0.75rem; box-shadow: 0 3px 12px rgba(16,185,129,0.25); }
+        .nav-links .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 5px 18px rgba(16,185,129,0.35); color: white !important; }
+        .mobile-menu-btn { display: none; background: none; border: 1px solid rgba(16,185,129,0.2); border-radius: 8px; padding: 0.35rem 0.55rem; cursor: pointer; font-size: 1.1rem; color: var(--neutral-800); }
+
+        /* ── MAIN ── */
+        main { padding-top: 64px; min-height: calc(100vh - 120px); }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+
+        .page-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; text-align: center; margin-bottom: 1rem; color: var(--neutral-800); }
+        .page-title span { color: var(--primary); font-style: italic; }
+
+        .page-subtitle { text-align: center; color: var(--neutral-600); margin-bottom: 4rem; font-size: 1rem; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.7; }
+
+        /* ── BLOG GRID ── */
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
+
+        .blog-card { background: var(--card-bg); backdrop-filter: blur(20px); padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid rgba(16,185,129,0.1); border-left: 4px solid var(--primary); transition: all 0.3s; position: relative; }
+        .blog-card:hover { box-shadow: 0 16px 40px rgba(0,0,0,0.12); transform: translateY(-6px); }
+
+        .blog-tag { display: inline-block; background: rgba(16,185,129,0.1); color: var(--primary); padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 1rem; letter-spacing: 0.05em; }
+
+        .blog-card h3 { font-family: 'Playfair Display', serif; color: var(--neutral-800); margin-bottom: 0.75rem; font-size: 1.2rem; font-weight: 600; line-height: 1.3; }
+
+        .blog-card p { color: var(--neutral-600); margin-bottom: 1.25rem; line-height: 1.7; font-size: 0.9rem; }
+
+        .blog-meta { font-size: 0.78rem; color: var(--neutral-400); margin-bottom: 0.75rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; }
+
+        .blog-status { display: inline-block; background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: white; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+
+        /* ── COMING SOON ── */
+        .coming-soon { text-align: center; padding: 4rem 2rem; background: var(--card-bg); border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid rgba(16,185,129,0.1); }
+        .coming-soon h2 { font-family: 'Playfair Display', serif; color: var(--primary); margin-bottom: 1rem; font-size: 2rem; }
+        .coming-soon p { color: var(--neutral-600); margin-bottom: 1rem; font-size: 1rem; line-height: 1.7; }
+
+        /* ── NEWSLETTER ── */
+        .newsletter-box { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white; padding: 3rem 2rem; border-radius: var(--radius); text-align: center; margin-top: 4rem; box-shadow: 0 12px 32px rgba(16,185,129,0.3); }
+        .newsletter-box h3 { font-family: 'Playfair Display', serif; margin-bottom: 0.75rem; font-size: 1.5rem; }
+        .newsletter-box p { margin-bottom: 0.75rem; opacity: 0.9; line-height: 1.7; }
+        .newsletter-box a { color: white; background: rgba(255,255,255,0.2); padding: 0.75rem 1.75rem; border-radius: 30px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s; border: 1.5px solid rgba(255,255,255,0.4); margin-top: 0.5rem; }
+        .newsletter-box a:hover { background: rgba(255,255,255,0.3); transform: translateY(-2px); }
+
+        /* ── FOOTER ── */
+        footer { background: var(--neutral-800); padding: 2rem; text-align: center; }
+        .footer-content { max-width: 1200px; margin: 0 auto; }
+        .footer-social { display: flex; justify-content: center; gap: 0.75rem; margin-bottom: 1rem; }
+        .footer-social a { width: 36px; height: 36px; border-radius: 9px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.55); text-decoration: none; transition: all 0.3s; }
+        .footer-social a:hover { background: rgba(16,185,129,0.2); color: var(--primary-light); border-color: rgba(16,185,129,0.3); }
+        .footer-links { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+        .footer-links a { font-size: 0.78rem; color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--primary-light); }
+        .footer-copyright { font-size: 0.75rem; color: rgba(255,255,255,0.28); }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+            .nav-links.active { display: flex; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: rgba(255,255,255,0.98); backdrop-filter: blur(20px); padding: 1rem; border-bottom: 1px solid rgba(16,185,129,0.1); gap: 0.25rem; }
+            .blog-grid { grid-template-columns: 1fr; }
+        }
+
+        /* ── MINI FORM EMAIL ── */
+        .email-capture { display: flex; gap: 0.6rem; margin-top: 1.25rem; flex-wrap: wrap; justify-content: center; }
+        .email-capture input[type="email"] { flex: 1; min-width: 220px; padding: 0.7rem 1rem; border-radius: 30px; border: none; font-family: 'Inter', sans-serif; font-size: 0.875rem; outline: none; color: #374151; }
+        .email-capture button { padding: 0.7rem 1.5rem; border-radius: 30px; border: none; background: white; color: #10B981; font-family: 'Inter', sans-serif; font-size: 0.875rem; font-weight: 700; cursor: pointer; transition: all 0.2s; white-space: nowrap; }
+        .email-capture button:hover { background: rgba(255,255,255,0.85); transform: translateY(-1px); }
+        .email-capture-success { display: none; margin-top: 1rem; font-size: 0.9rem; font-weight: 600; }
+        .email-capture-success.show { display: block; }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <nav>
+            <a href="index.html" class="logo" aria-label="Cristina Montaner - Inicio">
+                <span class="logo-icon">
+                    <img src="logo-cristina-montaner-contable.webp" alt="Logo" onerror="this.parentNode.innerHTML='📊'">
+                </span>
+                <span class="logo-text">
+                    Cristina Montaner
+                    <span class="logo-tagline">El punto medio entre gestoría y departamento interno</span>
+                </span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+            <ul class="nav-links" role="navigation">
+                <li><a href="index.html#problema">El Problema</a></li>
+                <li><a href="index.html#metodo">Método</a></li>
+                <li><a href="index.html#about">Sobre mí</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="container">
+            <h1 class="page-title">Blog de <span>Contabilidad</span></h1>
+            <p class="page-subtitle">Consejos prácticos, guías y recursos sobre contabilidad, fiscalidad y gestión financiera para agencias y estudios profesionales</p>
+
+            <!-- Próximos Artículos -->
+            <div class="blog-grid">
+                    <article class="blog-card">
+                    <span class="blog-tag">Comparativa</span>
+                    <p class="blog-meta">21 de marzo de 2026</p>
+                    <h3>📈 Software contable: ¿Cuál elegir para tu agencia o estudio de arquitectura?</h3>
+                    <p>Holded, Quipu, Contasimple o Sage 50: descubre qué herramienta encaja realmente con tu SL, con criterio de quien trabaja con estas plataformas con clientes reales cada semana.</p>
+                    <a href="software-contable-agencias-arquitectura.html" class="blog-status" style="text-decoration:none;">Leer artículo →</a>
+                </article>
+
+                <article class="blog-card">
+                    <span class="blog-tag">Próximamente</span>
+                    <p class="blog-meta">Guía Completa</p>
+                    <h3>🏗️ Guía contable para estudios de arquitectura</h3>
+                    <p>Todo lo que necesitas saber sobre contabilidad, facturación y gestión financiera específica para estudios de arquitectura. Desde la facturación por proyectos hasta la gestión de costes.</p>
+                    <span class="blog-status">Próximamente</span>
+                </article>
+
+                <article class="blog-card">
+                    <span class="blog-tag">Próximamente</span>
+                    <p class="blog-meta">Lista de Control</p>
+                    <h3>💡 5 errores contables que debes evitar</h3>
+                    <p>Los errores más comunes que veo en pequeñas empresas y agencias, y cómo puedes evitarlos para mantener tus finanzas en orden y evitar sanciones fiscales.</p>
+                    <span class="blog-status">Próximamente</span>
+                </article>
+
+                <article class="blog-card">
+                    <span class="blog-tag">Próximamente</span>
+                    <p class="blog-meta">Guía Práctica</p>
+                    <h3>📊 Cómo optimizar el flujo de caja en tu agencia</h3>
+                    <p>Aprende las mejores prácticas para mantener un flujo de caja saludable y evitar problemas de liquidez en tu agencia creativa. Incluye plantillas y casos reales.</p>
+                    <span class="blog-status">Próximamente</span>
+                </article>
+
+                <article class="blog-card">
+                    <span class="blog-tag">Próximamente</span>
+                    <p class="blog-meta">Decisión Estratégica</p>
+                    <h3>🎯 Cuándo contratar un contable externo vs interno</h3>
+                    <p>Análisis de costes, ventajas y desventajas de cada opción. Ayuda a decidir cuál es la mejor alternativa según el tamaño y necesidades de tu empresa.</p>
+                    <span class="blog-status">Próximamente</span>
+                </article>
+
+                <article class="blog-card">
+                    <span class="blog-tag">Próximamente</span>
+                    <p class="blog-meta">Guía Fiscal</p>
+                    <h3>💰 Optimización fiscal para empresas creativas</h3>
+                    <p>Estrategias legales de optimización fiscal específicas para agencias creativas, estudios y empresas de servicios profesionales. Actualizado con la normativa 2026.</p>
+                    <span class="blog-status">Próximamente</span>
+                </article>
+            </div>
+
+            <!-- Coming Soon -->
+            <div class="coming-soon">
+                <h2>🚀 Blog en construcción</h2>
+                <p>Estoy preparando contenido de calidad para ayudarte con la gestión contable y financiera de tu negocio.</p>
+                <p style="font-style: italic; color: var(--neutral-400); margin-top: 0.5rem;">
+                    Primer artículo publicado el 21 de marzo de 2026. Próximas publicaciones mensuales.
+                </p>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="newsletter-box">
+                <h3>📬 ¿Quieres recibir los nuevos artículos?</h3>
+                <p>Déjame tu email y te aviso cuando publique el próximo artículo.</p>
+                <form class="email-capture" id="blogEmailForm">
+                    <input type="email" id="blogEmail" placeholder="tu@email.com" required>
+                    <button type="submit">Avisame →</button>
+                </form>
+                <p class="email-capture-success" id="blogEmailSuccess">✅ ¡Apuntado! Te aviso en cuanto publique.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/cristinamontanerrodriguez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Cristina Montaner">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="blog.html">Blog</a>
+                <a href="formacion.html">Formación</a>
+            </div>
+            <p class="footer-copyright">© 2026 Cristina Montaner · Contabilidad en Remoto · Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        if (mobileMenuBtn && navLinks) {
+            mobileMenuBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                this.setAttribute('aria-expanded', navLinks.classList.contains('active'));
+            });
+            navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { navLinks.classList.remove('active'); mobileMenuBtn.setAttribute('aria-expanded','false'); }));
+        }
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.pageYOffset > 50));
+    </script>
+
+    <script>
+        document.getElementById('blogEmailForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var email = document.getElementById('blogEmail').value.trim();
+            if (!email) return;
+            fetch('https://formspree.io/f/mdawvgyn', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email: email, _subject: 'Quiero más información sobre el Blog', mensaje: 'Esta persona quiere ser avisada cuando publiques en el blog.' })
+            }).then(function(res) {
+                if (res.ok) {
+                    document.getElementById('blogEmailSuccess').classList.add('show');
+                    document.getElementById('blogEmailForm').style.display = 'none';
+                } else {
+                    alert('Hubo un error. Por favor inténtalo de nuevo.');
+                }
+            }).catch(function() {
+                alert('Hubo un error de conexión. Por favor inténtalo de nuevo.');
+            });
+        });
+    </script>
+</body>
+</html>

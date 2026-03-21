@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contable Freelance Online para Agencias y Estudios de Arquitectura | Cristina Montaner</title>
+    <meta name="description" content="Contable freelance online para agencias y estudios de arquitectura. Control financiero real, informes claros y disponibilidad continua. Primera consulta gratis.">
+    <meta name="keywords" content="contabilidad remota, contable freelance, gestión financiera, optimización fiscal, España, contable online">
+    <meta name="author" content="Cristina Montaner Rodríguez">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cristinamontaner.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cristinamontaner.com/">
+    <meta property="og:title" content="Contable Freelance Online para Agencias y Estudios de Arquitectura | Cristina Montaner">
+    <meta property="og:description" content="Tu departamento contable en remoto. Control financiero real, informes claros y disponibilidad continua. Primera consulta gratis.">
+    <meta property="og:image" content="https://cristinamontaner.com/contable-freelance-online-cristina-montaner.webp">
+    <meta property="og:locale" content="es_ES">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #10B981; --primary-light: #6EE7B7; --primary-dark: #059669;
+            --neutral-800: #374151; --neutral-600: #4B5563; --neutral-400: #9CA3AF;
+            --gradient-bg: linear-gradient(135deg, #F9FAFB 0%, #F3F4F6 50%, #E5E7EB 100%);
+            --card-bg: rgba(255,255,255,0.9);
+            --shadow: 0 8px 24px rgba(0,0,0,0.07);
+            --radius: 20px; --radius-sm: 12px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background: var(--gradient-bg); color: var(--neutral-800); overflow-x: hidden; }
+
+        /* ── HEADER ── */
+        header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.96); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(16,185,129,0.1); transition: box-shadow 0.3s; }
+        header::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--primary-light)); }
+        header.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
+        nav { max-width: 1200px; margin: 0 auto; padding: 0 2rem; height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+        .logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; flex-shrink: 0; }
+        .logo-icon { width: 34px; height: 34px; border-radius: 8px; overflow: hidden; background: transparent;; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+        .logo-icon img { width: 100%; height: 100%; object-fit: contain; }
+        .logo-text { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 600; color: var(--neutral-800); line-height: 1.2; }
+        .logo-tagline { display: block; font-family: 'Inter', sans-serif; font-size: 0.61rem; font-weight: 400; color: var(--neutral-400); }
+        .nav-links { display: flex; align-items: center; gap: 0.1rem; list-style: none; }
+        .nav-links a { font-size: 0.83rem; font-weight: 500; color: var(--neutral-600); text-decoration: none; padding: 0.4rem 0.85rem; border-radius: 8px; transition: all 0.2s; white-space: nowrap; }
+        .nav-links a:hover { color: var(--primary); background: rgba(16,185,129,0.06); }
+        .nav-links .nav-cta { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white !important; padding: 0.45rem 1.25rem; border-radius: 20px; font-weight: 600; margin-left: 0.75rem; box-shadow: 0 3px 12px rgba(16,185,129,0.25); }
+        .nav-links .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 5px 18px rgba(16,185,129,0.35); color: white !important; }
+        .mobile-menu-btn { display: none; background: none; border: 1px solid rgba(16,185,129,0.2); border-radius: 8px; padding: 0.35rem 0.55rem; cursor: pointer; font-size: 1.1rem; color: var(--neutral-800); }
+
+        /* ── HERO ── */
+        .hero { display: grid; grid-template-columns: 360px 1fr; min-height: 100vh; padding-top: 64px; }
+        .hero-left { background: linear-gradient(160deg, #10B981 0%, #059669 55%, #047857 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 3rem 2rem; position: relative; overflow: hidden; }
+        .hero-left::before { content: ''; position: absolute; top: -100px; left: -60px; width: 280px; height: 280px; border-radius: 50%; background: radial-gradient(circle, rgba(110,231,183,0.25) 0%, transparent 65%); pointer-events: none; }
+        .hero-left::after { content: ''; position: absolute; bottom: -80px; right: -60px; width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 65%); pointer-events: none; }
+
+        .hero-photo { width: 220px; height: 290px; border-radius: 16px; border: 3px solid rgba(255,255,255,0.4); overflow: hidden; margin-bottom: 1.5rem; box-shadow: 0 0 0 6px rgba(255,255,255,0.1), 0 12px 40px rgba(0,0,0,0.2); flex-shrink: 0; opacity: 0; animation: fadeUp 0.9s ease 0.3s forwards; background: rgba(255,255,255,0.15); }
+        .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+
+        .hero-divider { width: 40px; height: 1px; background: rgba(255,255,255,0.3); margin-bottom: 1.75rem; opacity: 0; animation: fadeUp 0.9s ease 0.5s forwards; }
+        .hero-quotes { display: flex; flex-direction: column; gap: 0.6rem; width: 100%; opacity: 0; animation: fadeUp 0.9s ease 0.6s forwards; }
+        .quote-item { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.18); border-radius: 10px; padding: 0.8rem 1rem; }
+        .quote-text { font-size: 0.85rem; color: rgba(255,255,255,0.9); line-height: 1.5; font-style: italic; }
+
+        .hero-right { display: flex; align-items: center; justify-content: center; padding: 3rem 3.5rem; position: relative; overflow: hidden; }
+        .hero-card { background: var(--card-bg); backdrop-filter: blur(20px); border-radius: var(--radius); border: 1px solid rgba(16,185,129,0.1); padding: 2.75rem; box-shadow: 0 20px 40px rgba(0,0,0,0.09); position: relative; width: 100%; opacity: 0; animation: fadeUp 0.9s ease 0.4s forwards; }
+        .hero-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--primary), var(--primary-light)); border-radius: var(--radius) var(--radius) 0 0; }
+        .eyebrow { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--primary); margin-bottom: 0.875rem; }
+        .hero-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; line-height: 1.1; color: var(--neutral-800); margin-bottom: 1.1rem; }
+        .hero-title span { color: var(--primary); font-style: italic; }
+        .hero-subtitle { font-size: 0.93rem; color: var(--neutral-600); line-height: 1.7; margin-bottom: 1.75rem; }
+        .hero-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 0.75rem; margin-bottom: 1.75rem; padding: 1.25rem; background: rgba(16,185,129,0.03); border-radius: var(--radius-sm); border: 1px solid rgba(16,185,129,0.08); }
+        .stat { text-align: center; }
+        .stat-value { font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 700; color: var(--primary); display: block; line-height: 1; margin-bottom: 0.3rem; }
+        .stat-label { font-size: 0.67rem; color: var(--neutral-400); line-height: 1.4; }
+        .hero-cta { display: flex; align-items: center; gap: 0.875rem; flex-wrap: wrap; }
+        .btn-primary { display: inline-flex; align-items: center; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white; text-decoration: none; padding: 0.85rem 1.75rem; border-radius: 30px; font-size: 0.875rem; font-weight: 600; box-shadow: 0 4px 18px rgba(16,185,129,0.3); transition: all 0.3s; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 26px rgba(16,185,129,0.4); }
+        .btn-secondary { display: inline-flex; align-items: center; color: var(--primary); text-decoration: none; padding: 0.85rem 1.4rem; border-radius: 30px; font-size: 0.875rem; font-weight: 500; border: 1.5px solid rgba(16,185,129,0.3); transition: all 0.3s; }
+        .btn-secondary:hover { background: rgba(16,185,129,0.05); border-color: var(--primary); }
+
+        /* ── SECCIONES ── */
+        .section { padding: 3.5rem 2rem; }
+        .section-alt { background: rgba(16,185,129,0.025); }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .section-header { margin-bottom: 2.5rem; }
+        .section-eyebrow { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--primary); margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.6rem; }
+        .section-eyebrow::before { content: ''; width: 24px; height: 2px; flex-shrink: 0; background: linear-gradient(90deg, var(--primary), var(--primary-light)); }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; line-height: 1.15; color: var(--neutral-800); margin-bottom: 0.75rem; }
+        .section-title span { color: var(--primary); font-style: italic; }
+        .section-subtitle { font-size: 0.93rem; color: var(--neutral-600); line-height: 1.7; max-width: 560px; }
+        .card { background: var(--card-bg); backdrop-filter: blur(20px); border-radius: var(--radius); border: 1px solid rgba(16,185,129,0.1); box-shadow: var(--shadow); position: relative; overflow: hidden; }
+        .card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--primary-light)); }
+
+        /* ── MERCADO (urgencia) ── */
+        .mercado-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; margin-bottom: 2rem; }
+        .mercado-card { background: var(--card-bg); backdrop-filter: blur(20px); border-radius: 18px; border: 1px solid rgba(16,185,129,0.1); padding: 1.75rem; text-align: center; box-shadow: var(--shadow); position: relative; transition: all 0.3s; }
+        .mercado-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--primary-light)); border-radius: 18px 18px 0 0; }
+        .mercado-card:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(16,185,129,0.1); }
+        .mercado-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .mercado-value { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 700; color: var(--primary); line-height: 1; margin-bottom: 0.4rem; }
+        .mercado-label { font-size: 0.82rem; font-weight: 600; color: var(--neutral-800); margin-bottom: 0.5rem; }
+        .mercado-desc { font-size: 0.78rem; color: var(--neutral-600); line-height: 1.55; }
+        .mercado-conclusion { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 14px; padding: 1.5rem 2rem; text-align: center; }
+        .mercado-conclusion-text { font-size: 0.93rem; color: rgba(255,255,255,0.9); line-height: 1.6; }
+        .mercado-conclusion-text strong { color: white; font-weight: 600; }
+
+        /* ── CUADRANTES ── */
+        .cuadrantes-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.25rem; }
+        .cuadrante-card { background: var(--card-bg); backdrop-filter: blur(20px); border-radius: 18px; border: 1px solid rgba(16,185,129,0.1); padding: 1.5rem; box-shadow: var(--shadow); position: relative; }
+        .cuadrante-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: rgba(239,68,68,0.3); border-radius: 18px 18px 0 0; }
+        .cuadrante-card.ideal::before { background: linear-gradient(90deg, var(--primary), var(--primary-light)); }
+        .cuadrante-icon { font-size: 1.4rem; margin-bottom: 0.6rem; }
+        .cuadrante-title { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 600; color: var(--neutral-800); margin-bottom: 0.75rem; line-height: 1.3; }
+        .cuadrante-items { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.875rem; }
+        .cuadrante-item { font-size: 0.78rem; color: var(--neutral-600); display: flex; align-items: flex-start; gap: 0.4rem; line-height: 1.4; }
+        .cuadrante-item.bad { color: rgba(239,68,68,0.7); }
+        .cuadrante-item.good { color: var(--primary-dark); }
+        .cuadrante-footer { font-size: 0.74rem; color: var(--neutral-400); font-style: italic; border-top: 1px solid rgba(16,185,129,0.08); padding-top: 0.6rem; }
+        .cuadrante-card.ideal .cuadrante-footer { color: var(--primary-dark); font-style: normal; font-weight: 500; }
+
+        /* ── PROBLEMA/BENEFICIOS ── */
+        .problema-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: start; }
+        .pain-card, .benefit-card { padding: 2.25rem; }
+        .col-label { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 600; color: var(--neutral-800); margin-bottom: 1.25rem; }
+        .pain-list, .benefit-list { display: flex; flex-direction: column; gap: 0.6rem; }
+        .pain-item { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.8rem 1rem; background: rgba(239,68,68,0.03); border-radius: 10px; border: 1px solid rgba(239,68,68,0.07); transition: all 0.3s; }
+        .pain-item:hover { background: rgba(239,68,68,0.05); transform: translateX(3px); }
+        .pain-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(239,68,68,0.45); flex-shrink: 0; margin-top: 0.45rem; }
+        .pain-text { font-size: 0.875rem; color: var(--neutral-800); line-height: 1.55; }
+        .benefit-group { margin-bottom: 1.25rem; }
+        .benefit-group:last-child { margin-bottom: 0; }
+        .benefit-group-title { font-size: 0.67rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--primary); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+        .benefit-group-title::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, rgba(16,185,129,0.3), transparent); }
+        .benefit-item { display: flex; align-items: center; gap: 0.65rem; padding: 0.55rem 0.9rem; background: rgba(16,185,129,0.04); border-radius: 9px; border: 1px solid rgba(16,185,129,0.08); transition: all 0.3s; margin-bottom: 0.35rem; }
+        .benefit-item:hover { background: rgba(16,185,129,0.08); transform: translateX(3px); }
+        .benefit-check { width: 18px; height: 18px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--primary-light)); display: flex; align-items: center; justify-content: center; font-size: 0.55rem; color: white; flex-shrink: 0; }
+        .benefit-text { font-size: 0.875rem; color: var(--neutral-800); line-height: 1.4; }
+
+        /* ── MÉTODO ── */
+        .metodo-steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.25rem; }
+        .metodo-step { background: var(--card-bg); backdrop-filter: blur(20px); border-radius: 18px; border: 1px solid rgba(16,185,129,0.1); padding: 1.75rem 1.4rem; text-align: center; position: relative; transition: all 0.3s; box-shadow: var(--shadow); }
+        .metodo-step:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(16,185,129,0.1); }
+        .metodo-step::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--primary-light)); border-radius: 18px 18px 0 0; }
+        .step-num { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 700; color: rgba(16,185,129,0.12); line-height: 1; margin-bottom: 0.4rem; }
+        .step-letter { display: inline-flex; width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: white; font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; border-radius: 10px; align-items: center; justify-content: center; margin-bottom: 0.875rem; }
+        .step-title { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 600; color: var(--neutral-800); margin-bottom: 0.6rem; }
+        .step-desc { font-size: 0.8rem; color: var(--neutral-600); line-height: 1.6; }
+
+        /* ── POR QUÉ YO ── */
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+
+        /* Izquierda: razones + compromisos + especialización */
+        .about-left { display: flex; flex-direction: column; gap: 2rem; }
+        .razones-list { display: flex; flex-direction: column; gap: 1rem; }
+        .razon-item { display: flex; gap: 1.1rem; padding: 1.25rem; background: var(--card-bg); backdrop-filter: blur(20px); border-radius: 14px; border: 1px solid rgba(16,185,129,0.1); box-shadow: 0 3px 12px rgba(0,0,0,0.04); transition: all 0.3s; }
+        .razon-item:hover { transform: translateX(4px); box-shadow: 0 6px 20px rgba(16,185,129,0.09); }
+        .razon-num { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--primary-light); flex-shrink: 0; line-height: 1; margin-top: 0.1rem; }
+        .razon-title { font-family: 'Playfair Display', serif; font-size: 0.98rem; font-weight: 600; color: var(--neutral-800); margin-bottom: 0.35rem; }
+        .razon-desc { font-size: 0.82rem; color: var(--neutral-600); line-height: 1.6; }
+
+        .compromisos-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.875rem; }
+        .compromiso-item { padding: 1rem; background: var(--card-bg); border-radius: 12px; border: 1px solid rgba(16,185,129,0.1); box-shadow: 0 3px 10px rgba(0,0,0,0.04); }
+        .compromiso-icon { font-size: 1.2rem; margin-bottom: 0.4rem; }
+        .compromiso-title { font-size: 0.82rem; font-weight: 600; color: var(--neutral-800); margin-bottom: 0.3rem; }
+        .compromiso-text { font-size: 0.75rem; color: var(--neutral-600); line-height: 1.5; }
+
+        .numeros-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 0.75rem; }
+        .numero-item { padding: 0.875rem 1rem; background: rgba(16,185,129,0.04); border-radius: 10px; border: 1px solid rgba(16,185,129,0.1); }
+        .numero-value { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--primary); line-height: 1; }
+        .numero-label { font-size: 0.72rem; color: var(--neutral-600); line-height: 1.4; margin-top: 0.2rem; }
+
+        /* Derecha: foto + botón */
+        .about-right { position: sticky; top: 84px; }
+        .about-photo-wrap { border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.12); border: 3px solid rgba(16,185,129,0.2); position: relative; margin-bottom: 1.25rem; }
+        .about-photo-wrap img { width: 100%; height: 580px; object-fit: cover; object-position: center 20%; display: block; }
+        .about-photo-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(5,150,105,0.9) 0%, transparent 100%); padding: 1.5rem; }
+        .about-photo-name { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 600; color: white; margin-bottom: 0.2rem; }
+        .about-photo-role { font-size: 0.71rem; color: rgba(255,255,255,0.75); letter-spacing: 0.06em; text-transform: uppercase; }
+        .about-link { display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: var(--primary); font-size: 0.875rem; font-weight: 600; text-decoration: none; padding: 0.875rem 1.25rem; border: 1.5px solid rgba(16,185,129,0.3); border-radius: 12px; transition: all 0.3s; text-align: center; background: var(--card-bg); }
+        .about-link:hover { background: rgba(16,185,129,0.05); border-color: var(--primary); transform: translateY(-1px); }
+
+        /* ── ROI ── */
+        .roi-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1.25rem; }
+        .roi-card { background: var(--card-bg); backdrop-filter: blur(20px); border-radius: 18px; border: 1px solid rgba(16,185,129,0.1); padding: 1.75rem; position: relative; transition: all 0.3s; box-shadow: var(--shadow); }
+        .roi-card:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(16,185,129,0.1); }
+        .roi-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--primary-light)); border-radius: 18px 18px 0 0; }
+        .roi-sector { font-size: 0.66rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--primary); margin-bottom: 0.4rem; }
+        .roi-title { font-family: 'Playfair Display', serif; font-size: 0.98rem; font-weight: 600; color: var(--neutral-800); margin-bottom: 0.5rem; line-height: 1.35; }
+        .roi-situation { font-size: 0.78rem; color: var(--neutral-400); line-height: 1.5; margin-bottom: 0.75rem; font-style: italic; border-left: 2px solid rgba(16,185,129,0.2); padding-left: 0.75rem; }
+        .roi-metric { display: flex; align-items: baseline; gap: 0.4rem; margin-bottom: 0.5rem; }
+        .roi-value { font-family: 'Playfair Display', serif; font-size: 1.9rem; font-weight: 700; color: var(--primary); }
+        .roi-unit { font-size: 0.78rem; color: var(--neutral-400); }
+        .roi-desc { font-size: 0.8rem; color: var(--neutral-600); line-height: 1.55; }
+
+        /* ── TESTIMONIOS ── */
+        .testimonios-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; }
+        .testimonial-card { background: var(--card-bg); backdrop-filter: blur(20px); border-radius: 18px; border: 1px solid rgba(16,185,129,0.1); padding: 1.75rem; box-shadow: var(--shadow); position: relative; transition: all 0.3s; }
+        .testimonial-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--primary-light)); border-radius: 18px 18px 0 0; }
+        .testimonial-card:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(16,185,129,0.09); }
+        .testimonial-quote { font-size: 2.2rem; color: rgba(16,185,129,0.18); font-family: 'Playfair Display', serif; line-height: 1; margin-bottom: 0.4rem; }
+        .testimonial-text { font-size: 0.87rem; color: var(--neutral-600); line-height: 1.7; font-style: italic; margin-bottom: 1.1rem; }
+        .testimonial-source { font-size: 0.73rem; color: var(--neutral-400); display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap; }
+        .testimonial-source a { color: var(--primary); text-decoration: none; }
+        .testimonial-source a:hover { text-decoration: underline; }
+
+        /* ── CONTACTO ── */
+        .contact-grid { display: grid; grid-template-columns: 370px 1fr; gap: 2rem; }
+        .contact-info-card { padding: 2.25rem; }
+        .contact-info-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 600; color: var(--neutral-800); margin-bottom: 1.75rem; }
+        .contact-detail { display: flex; align-items: flex-start; gap: 0.875rem; margin-bottom: 1.25rem; }
+        .contact-icon { width: 36px; height: 36px; background: rgba(16,185,129,0.08); border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; flex-shrink: 0; }
+        .contact-label { font-size: 0.67rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--neutral-400); margin-bottom: 0.15rem; }
+        .contact-value { font-size: 0.87rem; color: var(--neutral-800); }
+        .contact-value a { color: var(--neutral-800); text-decoration: none; }
+        .contact-value a:hover { color: var(--primary); }
+        .contact-form-card { padding: 2.25rem; }
+        .form-intro { font-size: 0.84rem; color: var(--neutral-600); margin-bottom: 1.25rem; line-height: 1.6; }
+        .form-group { margin-bottom: 1rem; }
+        .form-group label { display: block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--neutral-600); margin-bottom: 0.35rem; }
+        .form-group input, .form-group textarea { width: 100%; padding: 0.65rem 0.95rem; border: 1.5px solid rgba(16,185,129,0.15); border-radius: 9px; font-family: 'Inter', sans-serif; font-size: 0.875rem; color: var(--neutral-800); background: rgba(255,255,255,0.8); transition: all 0.2s; outline: none; }
+        .form-group input:focus, .form-group textarea:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(16,185,129,0.1); background: white; }
+        .form-group textarea { height: 95px; resize: vertical; }
+        .submit-btn { width: 100%; padding: 0.875rem; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white; border: none; border-radius: 10px; font-family: 'Inter', sans-serif; font-size: 0.875rem; font-weight: 600; cursor: pointer; box-shadow: 0 4px 14px rgba(16,185,129,0.28); transition: all 0.3s; }
+        .submit-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(16,185,129,0.38); }
+        .success-message { display: none; padding: 0.7rem 1rem; background: rgba(16,185,129,0.07); border: 1px solid rgba(16,185,129,0.2); border-radius: 9px; font-size: 0.84rem; color: var(--primary); margin-bottom: 0.875rem; }
+        .success-message.show { display: block; }
+
+        /* ── FOOTER ── */
+        footer { background: var(--neutral-800); padding: 2rem; text-align: center; }
+        .footer-content { max-width: 1200px; margin: 0 auto; }
+        .footer-social { display: flex; justify-content: center; gap: 0.75rem; margin-bottom: 1rem; }
+        .footer-social a { width: 36px; height: 36px; border-radius: 9px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.55); text-decoration: none; transition: all 0.3s; }
+        .footer-social a:hover { background: rgba(16,185,129,0.2); color: var(--primary-light); border-color: rgba(16,185,129,0.3); }
+        .footer-links { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+        .footer-links a { font-size: 0.78rem; color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--primary-light); }
+        .footer-copyright { font-size: 0.75rem; color: rgba(255,255,255,0.28); }
+
+        /* ── ANIMACIONES ── */
+        @keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+        .animate-in { opacity: 0; transform: translateY(20px); transition: opacity 0.65s ease, transform 0.65s ease; }
+        .animate-in.visible { opacity: 1; transform: translateY(0); }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 1024px) {
+            .hero { grid-template-columns: 320px 1fr; }
+            .metodo-steps { grid-template-columns: repeat(2,1fr); }
+            .cuadrantes-grid { grid-template-columns: repeat(2,1fr); }
+            .about-grid { grid-template-columns: 1fr; }
+            .about-right { position: static; }
+            .about-photo-wrap img { height: 340px; }
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .hero { grid-template-columns: 1fr; min-height: auto; }
+            .hero-left { padding: 2.5rem 1.5rem 2rem; }
+            .hero-photo { width: 160px; height: 210px; }
+            .hero-right { padding: 2rem 1.25rem 2.5rem; }
+            .hero-card { padding: 1.75rem 1.25rem; }
+            .hero-title { font-size: 2rem; }
+            .hero-stats { grid-template-columns: 1fr 1fr; }
+            .hero-stats .stat:last-child { grid-column: 1/-1; max-width: 50%; margin: 0 auto; }
+            .mercado-grid { grid-template-columns: 1fr; }
+            .cuadrantes-grid { grid-template-columns: 1fr; }
+            .problema-grid, .roi-grid, .testimonios-grid { grid-template-columns: 1fr; }
+            .metodo-steps { grid-template-columns: 1fr; }
+            .compromisos-grid { grid-template-columns: 1fr; }
+            .numeros-grid { grid-template-columns: 1fr 1fr; }
+            .section-title { font-size: 1.7rem; }
+            .mobile-menu-btn { display: flex; }
+            .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: rgba(255,255,255,0.98); backdrop-filter: blur(20px); flex-direction: column; padding: 0.75rem; border-bottom: 1px solid rgba(16,185,129,0.1); box-shadow: 0 8px 24px rgba(0,0,0,0.08); gap: 0.15rem; }
+            .nav-links.active { display: flex; }
+            .nav-links .nav-cta { margin-left: 0; text-align: center; justify-content: center; }
+        }
+        @media (max-width: 480px) {
+            .hero-title { font-size: 1.7rem; }
+            .hero-cta { flex-direction: column; }
+            .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+            .hero-stats { grid-template-columns: 1fr; }
+            .hero-stats .stat:last-child { grid-column: auto; max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+    <nav>
+        <a href="#" class="logo" aria-label="Cristina Montaner - Inicio">
+            <span class="logo-icon">
+                <img src="logo-cristina-montaner-contable.webp" alt="Logo" onerror="this.parentNode.innerHTML='📊'">
+            </span>
+            <span class="logo-text">
+                Cristina Montaner
+                <span class="logo-tagline">El punto medio entre gestoría y departamento interno</span>
+            </span>
+        </a>
+        <button class="mobile-menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <ul class="nav-links" role="navigation">
+            <li><a href="#problema">El Problema</a></li>
+            <li><a href="#metodo">Método</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#contact" class="nav-cta">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ══ SECCIÓN 1: HERO ══ -->
+<section class="hero" id="inicio">
+    <div class="hero-left">
+        <div class="hero-photo">
+            <img src="contable-remoto-especializada-agencias-arquitectura.webp" alt="Cristina Montaner contable freelance">
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-quotes">
+            <div class="quote-item"><div class="quote-text">La contabilidad que te ayuda a decidir, no solo a cumplir</div></div>
+            <div class="quote-item"><div class="quote-text">No desaparezco entre trimestres</div></div>
+        </div>
+    </div>
+    <div class="hero-right">
+        <div class="hero-card">
+            <div class="eyebrow">Tu departamento contable en remoto</div>
+<h1 class="hero-title" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">Contable freelance online para agencias y estudios de arquitectura</h1>
+<p class="hero-title" aria-hidden="true">Deja de tomar<br>decisiones <span style="color:var(--primary);font-style:italic;">a ciegas</span></p>            <p class="hero-subtitle">Tu gestoría cumple con Hacienda y desaparece. Tú sigues los fines de semana con facturas e informes. Hay una solución intermedia.</p>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-value">+€18k</span><span class="stat-label">detectados en estudio de arquitectura</span></div>
+                <div class="stat"><span class="stat-value">72h</span><span class="stat-label">tu departamento contable activo</span></div>
+                <div class="stat"><span class="stat-value">16+</span><span class="stat-label">años de experiencia en el sector</span></div>
+            </div>
+            <div class="hero-cta">
+                <a href="https://cal.com/cristinamontaner" target="_blank" rel="noopener noreferrer" class="btn-primary">📅 Agenda consulta gratis</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ SECCIÓN 2: EL MERCADO / URGENCIA ══ -->
+<section class="section section-alt" id="mercado">
+    <div class="container">
+        <div class="section-header animate-in">
+            <div class="section-eyebrow">Por qué ahora</div>
+            <h2 class="section-title">El mercado te <span>está esperando</span></h2>
+            <p class="section-subtitle">El contexto económico actual hace que entender tus números ya no sea opcional. Es supervivencia y crecimiento.</p>
+        </div>
+        <div class="mercado-grid animate-in">
+            <div class="mercado-card">
+                <div class="mercado-icon">📈</div>
+                <div class="mercado-value">+35%</div>
+                <div class="mercado-label">Crecimiento Post-Pandemia</div>
+                <div class="mercado-desc">Los estudios de arquitectura e ingeniería experimentan mayor demanda, pero con complejidad financiera aumentada que requiere control profesional.</div>
+            </div>
+            <div class="mercado-card">
+                <div class="mercado-icon">💻</div>
+                <div class="mercado-value">80%</div>
+                <div class="mercado-label">Digitalización Sin Análisis</div>
+                <div class="mercado-desc">Las empresas usan software contable moderno (Holded, Sage) pero nadie interpreta los datos para tomar decisiones estratégicas de negocio.</div>
+            </div>
+            <div class="mercado-card">
+                <div class="mercado-icon">⚠️</div>
+                <div class="mercado-value">-15%</div>
+                <div class="mercado-label">Márgenes Bajo Presión</div>
+                <div class="mercado-desc">Inflación, costes de materiales y competencia ajustan márgenes. Entender los números ya no es opcional, es supervivencia.</div>
+            </div>
+        </div>
+        <div class="mercado-conclusion animate-in">
+            <p class="mercado-conclusion-text">Las gestorías tradicionales no han evolucionado: siguen haciendo lo mismo que hace 20 años. <strong>Soy el punto intermedio que el mercado necesita ahora.</strong></p>
+        </div>
+    </div>
+</section>
+
+<!-- ══ SECCIÓN 3: EL PROBLEMA — cuadrantes + beneficios ══ -->
+<section class="section" id="problema">
+    <div class="container">
+        <div class="section-header animate-in">
+            <div class="section-eyebrow">¿En qué cuadrante estás?</div>
+            <h2 class="section-title">Dónde estás ahora <span>vs. dónde puedes llegar</span></h2>
+            <p class="section-subtitle">El 80% de estudios técnicos y profesionales IT están atrapados en los primeros 3 cuadrantes. Yo te llevo directamente al cuarto.</p>
+        </div>
+        <div class="cuadrantes-grid animate-in" style="margin-bottom:2.5rem;">
+            <div class="cuadrante-card">
+                <div class="cuadrante-icon">📋</div>
+                <div class="cuadrante-title">Solo Gestoría Básica</div>
+                <div class="cuadrante-items">
+                    <div class="cuadrante-item bad">❌ Contabilidad inaccesible</div>
+                    <div class="cuadrante-item bad">❌ Decisiones a ciegas</div>
+                    <div class="cuadrante-item bad">❌ Sin control de márgenes</div>
+                </div>
+                <div class="cuadrante-footer">Crecimiento limitado y dudas constantes</div>
+            </div>
+            <div class="cuadrante-card">
+                <div class="cuadrante-icon">📊</div>
+                <div class="cuadrante-title">Excel Propio + Gestoría</div>
+                <div class="cuadrante-items">
+                    <div class="cuadrante-item bad">⏰ Fines de semana perdidos</div>
+                    <div class="cuadrante-item bad">❌ Informes poco fiables</div>
+                    <div class="cuadrante-item bad">😰 Estrés y frustración</div>
+                </div>
+                <div class="cuadrante-footer">Trabajas más, pero sin claridad real</div>
+            </div>
+            <div class="cuadrante-card">
+                <div class="cuadrante-icon">❓</div>
+                <div class="cuadrante-title">Software Sin Interpretación</div>
+                <div class="cuadrante-items">
+                    <div class="cuadrante-item bad">💸 Proyectos poco rentables</div>
+                    <div class="cuadrante-item bad">❓ Precios sin criterio</div>
+                    <div class="cuadrante-item bad">🚫 Crecimiento bloqueado</div>
+                </div>
+                <div class="cuadrante-footer">Oportunidades perdidas por incertidumbre</div>
+            </div>
+            <div class="cuadrante-card ideal">
+                <div class="cuadrante-icon">🎯</div>
+                <div class="cuadrante-title">Contabilidad Estratégica</div>
+                <div class="cuadrante-items">
+                    <div class="cuadrante-item good">✅ Números claros y accesibles</div>
+                    <div class="cuadrante-item good">✅ Decisiones basadas en datos</div>
+                    <div class="cuadrante-item good">✅ Tiempo liberado para tu negocio</div>
+                </div>
+                <div class="cuadrante-footer">Crecimiento con control y confianza</div>
+            </div>
+        </div>
+
+        <div class="problema-grid animate-in">
+            <div class="card pain-card">
+                <div class="col-label">Situación actual</div>
+                <div class="pain-list">
+                    <div class="pain-item"><div class="pain-dot"></div><div class="pain-text">Contabilidad hecha por gestor externo a la que no tienes acceso.</div></div>
+                    <div class="pain-item"><div class="pain-dot"></div><div class="pain-text">Gestoría que presenta impuestos para cumplir con Hacienda, pero no aporta visión de negocio.</div></div>
+                    <div class="pain-item"><div class="pain-dot"></div><div class="pain-text">Dedicas tus fines de semana a recopilar facturas e informes para el gestor.</div></div>
+                    <div class="pain-item"><div class="pain-dot"></div><div class="pain-text">Dudas constantes sobre márgenes reales, rentabilidad por proyecto, capacidad para contratar.</div></div>
+                    <div class="pain-item"><div class="pain-dot"></div><div class="pain-text">Decisiones financieras basadas en intuición.</div></div>
+                    <div class="pain-item"><div class="pain-dot"></div><div class="pain-text">Sensación de descontrol con el dinero.</div></div>
+                </div>
+            </div>
+            <div class="card benefit-card">
+                <div class="col-label">Beneficios al trabajar juntos</div>
+                <div class="benefit-group">
+                    <div class="benefit-group-title">Claridad financiera</div>
+                    <div class="benefit-list">
+                        <div class="benefit-item"><div class="benefit-check">✓</div><div class="benefit-text">Contabilidad accesible en tu ordenador</div></div>
+                        <div class="benefit-item"><div class="benefit-check">✓</div><div class="benefit-text">Márgenes y resultados visibles</div></div>
+                        <div class="benefit-item"><div class="benefit-check">✓</div><div class="benefit-text">Informes claros sin invertir tu tiempo libre</div></div>
+                    </div>
+                </div>
+                <div class="benefit-group">
+                    <div class="benefit-group-title">Decisiones seguras</div>
+                    <div class="benefit-list">
+                        <div class="benefit-item"><div class="benefit-check">✓</div><div class="benefit-text">Sabrás qué proyectos son rentables</div></div>
+                        <div class="benefit-item"><div class="benefit-check">✓</div><div class="benefit-text">Base real para contratar o invertir</div></div>
+                        <div class="benefit-item"><div class="benefit-check">✓</div><div class="benefit-text">Precios y costes con criterio</div></div>
+                    </div>
+                </div>
+                <div class="benefit-group">
+                    <div class="benefit-group-title">Tranquilidad y control</div>
+                    <div class="benefit-list">
+                        <div class="benefit-item"><div class="benefit-check">✓</div><div class="benefit-text">Menos dudas sobre el dinero</div></div>
+                        <div class="benefit-item"><div class="benefit-check">✓</div><div class="benefit-text">Un punto de contacto para dudas contables</div></div>
+                        <div class="benefit-item"><div class="benefit-check">✓</div><div class="benefit-text">Control financiero en 1–3 meses</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ SECCIÓN 4: MÉTODO DOAS ══ -->
+<section class="section section-alt" id="metodo">
+    <div class="container">
+        <div class="section-header animate-in">
+            <div class="section-eyebrow">Cómo trabajo</div>
+            <h2 class="section-title">Método <span>DOAS</span></h2>
+            <p class="section-subtitle">Un proceso en 4 fases que transforma tu contabilidad en una herramienta de decisión.</p>
+        </div>
+        <div class="metodo-steps">
+            <div class="metodo-step animate-in"><div class="step-num">01</div><div class="step-letter">D</div><div class="step-title">Diagnóstico</div><div class="step-desc">Antes de proponer nada, entiendo dónde está tu negocio realmente. Estado real de la contabilidad, accesos y herramientas.</div></div>
+            <div class="metodo-step animate-in"><div class="step-num">02</div><div class="step-letter">O</div><div class="step-title">Organización</div><div class="step-desc">Estructuro y ordeno toda la contabilidad. Facturas, gastos, cobros. Todo en su sitio y accesible para ti.</div></div>
+            <div class="metodo-step animate-in"><div class="step-num">03</div><div class="step-letter">A</div><div class="step-title">Análisis</div><div class="step-desc">Informes claros con márgenes reales, rentabilidad por proyecto y visión financiera del negocio. Sin tecnicismos.</div></div>
+            <div class="metodo-step animate-in"><div class="step-num">04</div><div class="step-letter">S</div><div class="step-title">Seguimiento</div><div class="step-desc">Contabilidad mensual continua. Soy tu punto de contacto para cualquier duda contable o financiera.</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ SECCIÓN 5: POR QUÉ YO ══ -->
+<section class="section" id="about">
+    <div class="container">
+        <div class="about-grid animate-in">
+
+            <!-- IZQUIERDA: razones + compromisos + especialización -->
+            <div class="about-left">
+                <div>
+                    <div class="section-eyebrow">Por qué elegirme</div>
+                    <h2 class="section-title">Tres razones que <span>me diferencian</span></h2>
+                    <p class="section-subtitle" style="margin-bottom:0">No soy una gestoría más. Soy el punto medio que faltaba entre cumplir con Hacienda y tener un departamento financiero propio.</p>
+                    <div class="razones-list" style="margin-top:1.5rem;">
+                        <div class="razon-item"><div class="razon-num">01</div><div><div class="razon-title">No desaparezco entre trimestres</div><div class="razon-desc">Con una gestoría, presentan tus impuestos y hasta el siguiente trimestre no sabes nada. Yo estoy disponible cada semana para resolver dudas, revisar números y acompañarte en las decisiones.</div></div></div>
+                        <div class="razon-item"><div class="razon-num">02</div><div><div class="razon-title">Contabilidad pensada para tu negocio, no para Hacienda</div><div class="razon-desc">La gestoría organiza los números para cumplir con la ley. Yo los organizo para que puedas entenderlos, tomar decisiones y crecer. Son dos cosas muy distintas.</div></div></div>
+                        <div class="razon-item"><div class="razon-num">03</div><div><div class="razon-title">Nivel corporativo al alcance de tu estudio o agencia</div><div class="razon-desc">16 años en contabilidad de grandes empresas. Ese mismo nivel de análisis y rigor aplicado a tu negocio, sin el coste de un departamento interno.</div></div></div>
+                    </div>
+                </div>
+
+                <!-- Mis compromisos -->
+                <div>
+                    <div class="section-eyebrow" style="margin-bottom:1rem;">Mis compromisos contigo</div>
+                    <div class="compromisos-grid">
+                        <div class="compromiso-item"><div class="compromiso-icon">🔒</div><div class="compromiso-title">Confianza y Confidencialidad</div><div class="compromiso-text">Respuesta garantizada en menos de 24h hábiles. Discreción total en todo momento.</div></div>
+                        <div class="compromiso-item"><div class="compromiso-icon">📋</div><div class="compromiso-title">Orden y Claridad</div><div class="compromiso-text">En 72h desde que me entregas la documentación, tienes tu contabilidad organizada y accesible.</div></div>
+                        <div class="compromiso-item"><div class="compromiso-icon">✅</div><div class="compromiso-title">Responsabilidad</div><div class="compromiso-text">Si al primer cierre trimestral no tienes claridad financiera real, sigo trabajando sin coste adicional.</div></div>
+                    </div>
+                </div>
+
+                <!-- Mis números -->
+                <div>
+                    <div class="section-eyebrow" style="margin-bottom:1rem;">El perfil que respalda cada compromiso</div>
+                    <div class="numeros-grid">
+                        <div class="numero-item"><div class="numero-value">+17 años</div><div class="numero-label">en contabilidad corporativa real</div></div>
+                        <div class="numero-item"><div class="numero-value">20</div><div class="numero-label">sociedades gestionadas en mi carrera</div></div>
+                        <div class="numero-item"><div class="numero-value">3 países</div><div class="numero-label">España, Suiza y Latinoamérica</div></div>
+                        <div class="numero-item"><div class="numero-value">+100</div><div class="numero-label">facturas de venta/mes gestionadas en SAP</div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DERECHA: foto + botón -->
+            <div class="about-right">
+                <a href="experiencia.html" style="text-decoration:none; display:block;">
+                <div class="about-photo-wrap" style="cursor:pointer;">
+                    <img src="contable-freelance-online-cristina-montaner.webp" alt="Cristina Montaner contable freelance online">
+                    <div class="about-photo-overlay">
+                        <p style="color:rgba(255,255,255,0.7); font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.3rem;">Quiero saber más</p>
+                        <p style="color:white; font-family:'Playfair Display',serif; font-size:1.05rem; font-weight:600; line-height:1.3;">Pincha aquí si quieres<br>saber más sobre mí →</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ SECCIÓN 6: PRUEBA SOCIAL / ROI ══ -->
+<section class="section section-alt" id="resultados">
+    <div class="container">
+        <div class="section-header animate-in">
+            <div class="section-eyebrow">Casos reales</div>
+            <h2 class="section-title">Resultados reales, <span>números reales</span></h2>
+            <p class="section-subtitle">Resultados concretos y anonimizados de clientes reales. Lo que ocurre cuando la contabilidad trabaja para ti.</p>
+        </div>
+        <div class="roi-grid animate-in">
+            <div class="roi-card">
+                <div class="roi-sector">Estudio de Arquitectura</div>
+                <div class="roi-title">Proyectos residenciales vs. comerciales: margen del 8% vs. 32%</div>
+                <div class="roi-situation">Facturaba €180K anuales pero no sabía qué proyectos generaban más margen. Aceptaba todo tipo de encargos "por si acaso".</div>
+                <div class="roi-metric"><span class="roi-value">+€18.000</span><span class="roi-unit">adicionales el primer año</span></div>
+                <div class="roi-desc">Cambió enfoque hacia proyectos comerciales y subió precios residenciales un 15%. Resultado inmediato en el primer ejercicio.</div>
+            </div>
+            <div class="roi-card">
+                <div class="roi-sector">Profesional IT</div>
+                <div class="roi-title">10 horas mensuales de trabajo manual a coste €60/hora</div>
+                <div class="roi-situation">Perdía 10 horas mensuales recopilando facturas y haciendo informes manuales. Tiempo que no facturaba.</div>
+                <div class="roi-metric"><span class="roi-value">+€7.200</span><span class="roi-unit">facturación adicional anual</span></div>
+                <div class="roi-desc">Automatizamos el proceso completo. Acceso directo al software, informes automáticos, coordinación directa con gestoría. 120h/año recuperadas.</div>
+            </div>
+            <div class="roi-card">
+                <div class="roi-sector">Consultora</div>
+                <div class="roi-title">Consultoría generaba 3x más por hora que desarrollo</div>
+                <div class="roi-situation">Destinaba el 70% del tiempo a desarrollo y solo el 30% a consultoría, sin saber que era mucho menos rentable.</div>
+                <div class="roi-metric"><span class="roi-value">+€25.000</span><span class="roi-unit">incremento anual</span></div>
+                <div class="roi-desc">Reorientó servicios: 60% consultoría, 40% desarrollo. Subió precios de desarrollo un 20% y creó paquetes de consultoría recurrente.</div>
+            </div>
+            <div class="roi-card">
+                <div class="roi-sector">Escuela de Inglés</div>
+                <div class="roi-title">Sin control de cobros ni gastos diarios</div>
+                <div class="roi-situation">No controlaba cobros realizados ni pendientes. "Perdía dinero" sin saber dónde lo gastaba.</div>
+                <div class="roi-metric"><span class="roi-value">€8.400</span><span class="roi-unit">dejó de perder anualmente</span></div>
+                <div class="roi-desc">Presupuesto mensual detallado, control de cobros automático, seguimiento de gastos diarios. Visibilidad total del flujo de dinero.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══ TESTIMONIOS ══ -->
+<section class="section" id="testimonios">
+    <div class="container">
+        <div class="section-header animate-in">
+            <div class="section-eyebrow">Lo que dicen</div>
+            <h2 class="section-title">Clientes que ya <span>tomaron el control</span></h2>
+        </div>
+        <div class="testimonios-grid">
+            <article class="testimonial-card animate-in"><div class="testimonial-quote">"</div><p class="testimonial-text">Gran profesional, la experiencia que tuvimos contigo nos ayudó mucho en la empresa. Seguro que tendrás mucha suerte. Saludos.</p><div class="testimonial-source">— LinkedIn <a href="https://www.linkedin.com/feed/update/urn:li:activity:7416765986248482816?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7416765986248482816%2C7416770488393342977%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287416770488393342977%2Curn%3Ali%3Aactivity%3A7416765986248482816%29" target="_blank" rel="noopener noreferrer">🔗 Ver comentario</a></div></article>
+            <article class="testimonial-card animate-in"><div class="testimonial-quote">"</div><p class="testimonial-text">Cristina es una persona muy trabajadora y profesional. Tiene un amplio conocimiento de su área. Es un placer trabajar con ella, siempre está dispuesta a ayudar y asume tus problemas como suyos.</p><div class="testimonial-source">— LinkedIn <a href="https://www.linkedin.com/in/cristinamontanerrodriguez/details/recommendations/" target="_blank" rel="noopener noreferrer">🔗 Ver recomendaciones</a></div></article>
+            <article class="testimonial-card animate-in"><div class="testimonial-quote">"</div><p class="testimonial-text">Llevamos 3 meses contando con Cristina y es una gran profesional: atenta, proactiva, educada… Delegar según qué tareas da vértigo y siento que con ella hemos acertado. ¡Muy recomendable!</p><div class="testimonial-source">— Fiverr <a href="https://es.fiverr.com/cris_montaner?public_mode=true" target="_blank" rel="noopener noreferrer">🔗 Ver perfil verificado</a></div></article>
+        </div>
+    </div>
+</section>
+
+<!-- ══ SECCIÓN 7: CONTACTO ══ -->
+<section class="section section-alt" id="contact">
+    <div class="container">
+        <div class="section-header animate-in">
+            <div class="section-eyebrow">Hablemos</div>
+            <h2 class="section-title">Primera sesión <span>gratuita</span></h2>
+            <p class="section-subtitle">30 minutos para entender tu situación y ver si podemos trabajar juntos. Sin compromiso.</p>
+        </div>
+        <div class="contact-grid animate-in">
+            <div class="card contact-info-card">
+                <div class="contact-info-title">¿Hablamos?</div>
+                <div class="contact-detail"><div class="contact-icon">📧</div><div><div class="contact-label">Email</div><div class="contact-value"><a id="em-lnk" href="#"><span id="em-txt"></span></a></div></div></div>
+                <div class="contact-detail"><div class="contact-icon">📱</div><div><div class="contact-label">Teléfono</div><div class="contact-value"><a href="tel:+34677221810">+34 677 22 18 10</a> · <a href="https://wa.me/34677221810" target="_blank" rel="noopener noreferrer" style="color:var(--primary)">WhatsApp</a></div></div></div>
+                <div class="contact-detail"><div class="contact-icon">📍</div><div><div class="contact-label">Ubicación</div><div class="contact-value">España · Trabajo remoto flexible</div></div></div>
+                <div class="contact-detail"><div class="contact-icon">📅</div><div><div class="contact-label">Reservar consulta</div><div class="contact-value"><a href="https://cal.com/cristinamontaner" target="_blank" rel="noopener noreferrer">Agendar tu cita aquí →</a></div></div></div>
+            </div>
+            <div class="card contact-form-card">
+                <form id="contactForm">
+                    <p class="form-intro">O si lo prefieres, déjame tus datos y me pongo en contacto contigo.</p>
+                    <div class="success-message" id="successMessage" role="alert">✅ ¡Mensaje enviado! Me pondré en contacto contigo pronto.</div>
+                    <div class="form-group"><label for="name">Nombre *</label><input type="text" id="name" name="name" required autocomplete="name"></div>
+                    <div class="form-group"><label for="email">Email *</label><input type="email" id="email" name="email" required autocomplete="email"></div>
+                    <div class="form-group"><label for="phone">Teléfono</label><input type="tel" id="phone" name="phone" autocomplete="tel"></div>
+                    <div class="form-group"><label for="subject">Asunto *</label><input type="text" id="subject" name="subject" required></div>
+                    <div class="form-group"><label for="message">Mensaje *</label><textarea id="message" name="message" required></textarea></div>
+                    <button type="submit" class="submit-btn">Enviar Mensaje →</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/cristinamontanerrodriguez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Cristina Montaner">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+            </a>
+        </div>
+        <div class="footer-links">
+            <a href="blog.html">Blog</a>
+            <a href="formacion.html">Formación</a>
+        </div>
+        <p class="footer-copyright">© 2026 Cristina Montaner · Contabilidad en Remoto · Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    if (mobileMenuBtn && navLinks) {
+        mobileMenuBtn.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            this.setAttribute('aria-expanded', navLinks.classList.contains('active'));
+        });
+        navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { navLinks.classList.remove('active'); mobileMenuBtn.setAttribute('aria-expanded','false'); }));
+    }
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.pageYOffset > 50));
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => { if (entry.isIntersecting) { setTimeout(() => entry.target.classList.add('visible'), i * 60); observer.unobserve(entry.target); } });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        if (!name || !email || !subject || !message) { alert('Por favor completa todos los campos requeridos (*)'); return; }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert('Por favor introduce un email válido'); return; }
+        fetch('https://formspree.io/f/mdawvgyn', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, phone, subject, message })
+        })
+        .then(res => {
+            if (res.ok) {
+                document.getElementById('successMessage').classList.add('show');
+                this.reset();
+                setTimeout(() => document.getElementById('successMessage').classList.remove('show'), 5000);
+            } else {
+                alert('Hubo un error al enviar. Por favor escríbeme directamente a hola@cristinamontaner.com');
+            }
+        })
+        .catch(() => alert('Hubo un error de conexión. Por favor inténtalo de nuevo.'));
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href === '#') return;
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) window.scrollTo({ top: target.getBoundingClientRect().top + window.pageYOffset - 68, behavior: 'smooth' });
+        });
+    });
+</script>
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+"name": "Cristina Montaner Rodríguez - Contable Freelance Online",
+  "description": "Contable freelance online especializada en agencias y estudios de arquitectura. Control financiero real, informes claros, disponibilidad continua.",
+  "provider": {
+    "@type": "Person",
+    "name": "Cristina Montaner Rodríguez",
+    "jobTitle": "Contable Freelance Online",
+    "url": "https://cristinamontaner.com"
+  },
+  "areaServed": { "@type": "Country", "name": "España" },
+  "serviceType": "Contabilidad Remota"
+}
+</script>
+<script>
+(function(){
+    var e=["hola","@","cristinamontaner",".","com"].join("");
+    document.getElementById("em-txt").textContent=e;
+    document.getElementById("em-lnk").href="mailto:"+e;
+})();
+</script>
+</body>
+</html>
