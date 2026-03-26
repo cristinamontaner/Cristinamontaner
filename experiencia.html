@@ -42,6 +42,7 @@
         .site-nav-links a:hover { color: #10B981; background: rgba(16,185,129,0.06); }
         .site-nav-links .nav-cta { background: linear-gradient(135deg, #10B981, #059669); color: white !important; padding: 0.45rem 1.25rem; border-radius: 20px; font-weight: 600; margin-left: 0.75rem; box-shadow: 0 3px 12px rgba(16,185,129,0.25); }
         .site-nav-links .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 5px 18px rgba(16,185,129,0.35); color: white !important; }
+        .site-mobile-btn { display: none; background: none; border: 1px solid rgba(16,185,129,0.2); border-radius: 8px; padding: 0.35rem 0.55rem; cursor: pointer; font-size: 1.1rem; color: #374151; flex-shrink: 0; }
 
         /* ── FOOTER ── */
         footer { background: var(--neutral-800); padding: 2rem; text-align: center; }
@@ -128,6 +129,11 @@
             .conclusion { padding:1.75rem 1.5rem; }
             .expertise-badge { font-size:0.75rem; padding:0.4rem 1rem; white-space:normal; text-align:center; }
             .site-nav-links { display: none; }
+            .site-mobile-btn { display: flex; }
+            .site-logo-tagline { white-space: normal; max-width: 160px; line-height: 1.3; }
+            .site-logo { max-width: calc(100% - 60px); }
+            .site-nav-links.active { display: flex; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: rgba(255,255,255,0.98); backdrop-filter: blur(20px); padding: 0.75rem; border-bottom: 1px solid rgba(16,185,129,0.1); box-shadow: 0 8px 24px rgba(0,0,0,0.08); gap: 0.15rem; }
+            .site-nav-links.active .nav-cta { margin-left: 0; text-align: center; }
         }
     </style>
 </head>
@@ -139,6 +145,7 @@
                 <span class="site-logo-icon"><img src="logo-cristina-montaner-contable.webp" alt="Logo" onerror="this.parentNode.innerHTML='📊'"></span>
                 <span class="site-logo-text">Cristina Montaner<span class="site-logo-tagline">El punto medio entre gestoría y departamento interno</span></span>
             </a>
+            <button class="site-mobile-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
             <ul class="site-nav-links">
                 <li><a href="index.html#problema">El Problema</a></li>
                 <li><a href="index.html#metodo">Método</a></li>
@@ -258,5 +265,20 @@
         </div>
     </footer>
 
+
+<script>
+    const btn = document.querySelector('.site-mobile-btn');
+    const nav = document.querySelector('.site-nav-links');
+    if (btn && nav) {
+        btn.addEventListener('click', function() {
+            nav.classList.toggle('active');
+            this.setAttribute('aria-expanded', nav.classList.contains('active'));
+        });
+        nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+            nav.classList.remove('active');
+            btn.setAttribute('aria-expanded', 'false');
+        }));
+    }
+</script>
 </body>
 </html>
